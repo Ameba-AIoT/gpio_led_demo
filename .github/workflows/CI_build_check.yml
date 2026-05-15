@@ -66,6 +66,7 @@ jobs:
 
           # source env
           echo source ${{github.workspace}}/ameba-rtos/env.sh > env.sh
+          export RTK_TOOLCHAIN_DIR=/opt/rtk-toolchain
           source env.sh
           echo $AMEBA_SDK
           
